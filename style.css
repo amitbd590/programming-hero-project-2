@@ -1,0 +1,329 @@
+/* Google font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+/* Basic css */
+
+* {
+    margin: 0;
+    padding: 0;
+
+}
+
+body {
+    background: #FFFFFF;
+    font-family: 'Poppins', sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: rgb(63, 63, 63);
+}
+
+a {
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+}
+
+p {
+    margin: 0;
+    padding: 0;
+}
+
+/* Menu Bar Start */
+
+#header,
+#hero-bar {
+    background: #2D25A0;
+}
+
+#header .container {
+    width: 1164px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#header .container menu {
+    padding-top: 42px;
+    display: flex;
+    justify-content: space-between;
+}
+
+#header .container nav {}
+
+#header .container menu ul {}
+
+#header .container menu ul li {
+    list-style: none;
+    display: inline;
+}
+
+#header .container menu ul li a {
+    text-decoration: none;
+    padding-right: 20px;
+    color: #ddd;
+    font-size: 16px;
+    transition: .3s linear;
+}
+
+#header .container menu ul li a:hover {
+    color: #E02C6D;
+}
+
+#header .container menu ul li:hover {
+    transform: scale(110%);
+}
+
+#header .container menu .login {
+    background: #E02C6D;
+    padding: 10px 24px;
+}
+
+#header .container menu .login .fas {
+    color: #ddd;
+    font-size: 12px;
+}
+
+#header .container menu .login .text {
+    color: #ddd;
+    font-size: 16px;
+}
+
+/* Hero Section */
+
+#hero-bar {
+    padding-top: 67px;
+}
+
+#hero-bar .container {
+    width: 1164px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#hero-bar .container .main-bar {
+    display: flex;
+}
+
+#hero-bar .container .main-bar .left-side,
+#hero-bar .container .main-bar .right-side {
+    width: 50%;
+}
+
+#hero-bar .container .main-bar .left-side {
+    padding-bottom: 240px;
+
+}
+
+#hero-bar .container .main-bar .left-side h2 {
+    font-size: 64px;
+    color: #fff;
+    margin-bottom: 37px;
+    line-height: 80px;
+}
+
+#hero-bar .container .main-bar .left-side .root-btn {
+    display: inline-block;
+    transition: transform .5s linear;
+}
+
+#hero-bar .container .main-bar .left-side .root-btn a {
+    background: #E02C6D;
+    padding: 14px 24px;
+    color: #fff;
+    line-height: 24px;
+    font-size: 16px;
+    border: 2px solid #E02C6D;
+    transition: background .3s linear;
+}
+
+#hero-bar .container .main-bar .left-side .root-btn:hover {
+    transform: scale(110%);
+}
+
+#hero-bar .container .main-bar .left-side a:hover {
+    background: #e02c6e00;
+}
+
+#hero-bar .container .main-bar .left-side i {
+    margin-left: 5px;
+}
+
+#hero-bar .container .main-bar .right-side {}
+
+#hero-bar .container .main-bar .right-side img {
+    position: relative;
+    animation: forImg 3s linear alternate-reverse infinite;
+}
+
+@keyframes forImg {
+    0% {
+        top: -20px;
+    }
+
+    100% {
+        top: 20px;
+    }
+}
+
+/* Blog Section */
+
+#blog-section {
+    margin-top: 70px;
+}
+
+#blog-section .container {
+    width: 1053px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#blog-section .container article {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 30px;
+    row-gap: 27px;
+}
+
+#blog-section .container .blog {}
+
+#blog-section .container .card {
+    padding: 15px;
+    background: #FFFFFF;
+    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+}
+
+#blog-section .container .blog img {
+    width: 300px;
+    height: 256px;
+    transition: .3s linear;
+    cursor: pointer;
+}
+
+#blog-section .container .blog img:hover {
+    transform: scale(102%);
+}
+
+#blog-section .container .blog h2 {
+    color: #18191F;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+#blog-section .container .blog p {
+    color: #6C6C6C;
+    font-size: 16px;
+}
+
+
+/* Highlights page */
+
+#Highlights {
+    margin-top: 165px;
+}
+#Highlights .container {
+    width: 1164px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+#Highlights .container .main-body{
+   display: flex;
+ 
+}
+#Highlights .container .left-side,
+#Highlights .container .left-side {
+    width: 50%;
+}
+#Highlights .container .left-side h2 {
+   margin-top: 71px;
+   color: #0A0826;
+   font-size: 48px;
+   line-height: 60px;
+}
+#Highlights .container .left-side p {
+   color: #6C6C6C;
+   font-size: 16px;
+}
+#Highlights .container .left-side .root-btn {
+    display: inline-block;
+    transition: transform .5s linear;
+    margin-top: 36px;
+}
+
+#Highlights .container .left-side .root-btn a {
+    background: #E02C6D;
+    padding: 14px 24px;
+    color: #fff;
+    line-height: 24px;
+    font-size: 16px;
+    border: 2px solid #E02C6D;
+    transition: background .3s linear;
+}
+
+#Highlightsbar .container .left-side .root-btn:hover {
+    transform: scale(110%);
+
+    
+}
+
+#Highlights .container  .left-side a:hover {
+    background: #e02c6e00;
+    color: rgb(58, 58, 58);
+}
+
+#Highlights .container  .left-side i {
+    margin-left: 5px;
+}
+#Highlights .container  .right-side {
+    padding-left: 66px;
+}
+#Highlights .container  .right-side img{
+    width: 567px;
+    height: 427px;
+}
+
+
+/* Logo Bar */
+
+#logo{
+   margin-top: 158px; 
+}
+#logo .container{
+    width: 1164px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+#logo .container .main-body{
+    text-align: center;
+}
+#logo .container .main-body img{
+   display: inline-block;
+   
+}
+#logo .container .main-body .fab{
+    margin-top: 20px;
+  padding: 0 7px;
+  color: rgb(124, 124, 124);
+  transition: .3s linear;
+  margin-bottom:20px;
+   
+}
+#logo .container .main-body .fab:hover{
+  color: #E02C6D;
+  transform: scale(125%);
+}
+#logo .container .main-body h3{
+  font-size: 18px;
+  font-weight: normal;
+  margin-bottom: 63px;
+
+}
