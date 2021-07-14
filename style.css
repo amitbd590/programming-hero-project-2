@@ -230,6 +230,47 @@ p {
     font-size: 16px;
 }
 
+/* consulting */
+#consulting{
+    background: #2D25A0;
+    margin-top: 120px;
+    padding: 100px 0;
+   
+}
+#consulting .container{
+    width: 1164px;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: space-between;
+}
+#consulting .container .left-side{
+   width: 70%;
+}
+ 
+#consulting .container .left-side h2{
+  color: #ddd;
+}
+#consulting .container .right-side{
+  transition:transform .3s linear ;
+  margin-top: 6px;
+}
+#consulting .container .right-side .btn{
+    margin-top: 10px;
+  color: #fff;
+  background: #E02C6D;
+  border: 2px solid #E02C6D;
+  padding: 20px 40px;
+  border-radius: 20px;
+  transition: .3s linear;
+}
+#consulting .container .right-side .btn:hover{
+  color: #fff;
+  background: #e02c6e00;
+}
+#consulting .container .right-side:hover{
+  transform: scale(110%);
+}
 
 /* Highlights page */
 
@@ -298,26 +339,99 @@ p {
     height: 427px;
 }
 
+/* Contact form */
 
-/* Logo Bar */
-
-#logo{
-   margin-top: 158px; 
+#contact{
+    background: #2D25A0;
+    margin-top: 60px;
+    padding: 100px 0;
 }
-#logo .container{
+#contact .container{
+    width: 1164px;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+}
+#contact .container .left-side{
+    width: 50%;
+   padding-right: 50px;
+}
+#contact .container .left-side .text-1{
+   font-size: 45px;
+   color: #fff;
+}
+#contact .container .left-side .text-2{
+   font-size: 25px;
+   color: #fff;
+}
+#contact .container .left-side .text-3{
+   font-size: 15px;
+   color: #fff;
+   margin-top: 20px;
+}
+#contact .container .left-side .text-4{
+   font-size: 15px;
+   color: rgb(143, 143, 143);
+   margin-top: 30px;
+}
+#contact .container .left-side .text-5{
+   font-size: 15px;
+   color: rgb(143, 143, 143);
+}
+#contact .container .right-side{
+   width: 50%;
+}
+#contact .container .right-side .text{
+   font-size: 35px;
+   margin-bottom: 10px;
+   color: #fff;  
+}
+#contact .container .right-side input,
+#contact .container .right-side textarea {
+   display: block;
+   background: #0a0826bf;
+   padding: 10px 20px;
+   margin-bottom: 10px;
+   color: #fff;
+
+}
+#contact .container .right-side textarea {
+  margin-bottom: 20px;
+
+}
+#contact .container .right-side .btn{
+    font-size: 15px;
+    background: #E02C6D;  
+    color: #fff;
+    padding: 10px 20px;
+    border: 2px solid #E02C6D;
+    border-radius: 10px;
+    transition: .3s linear;
+
+ }
+#contact .container .right-side .btn:hover{
+    background: #e02c6e00;  
+ }
+
+/* Footer Bar */
+
+#footer{
+   margin-top: 120px; 
+}
+#footer .container{
     width: 1164px;
     display: block;
     margin-left: auto;
     margin-right: auto;
 }
-#logo .container .main-body{
+#footer .container .main-body{
     text-align: center;
 }
-#logo .container .main-body img{
+#footer .container .main-body img{
    display: inline-block;
    
 }
-#logo .container .main-body .fab{
+#footer .container .main-body .fab{
     margin-top: 20px;
   padding: 0 7px;
   color: rgb(124, 124, 124);
@@ -325,16 +439,18 @@ p {
   margin-bottom:20px;
    
 }
-#logo .container .main-body .fab:hover{
+#footer .container .main-body .fab:hover{
   color: #E02C6D;
   transform: scale(125%);
 }
-#logo .container .main-body h3{
+#footer .container .main-body h3{
   font-size: 18px;
   font-weight: normal;
   margin-bottom: 63px;
 
 }
+
+
 
 /* Media query */
 
@@ -424,6 +540,9 @@ p {
 
     }
 
+
+
+
     @media screen and (max-width:767px){
         #header .container menu {
             width: 767px !important;
@@ -508,23 +627,22 @@ p {
         #logo .container {
             width: 767px;
         }
-    }
+    /* ---------------------- */
 
-
-
-    @media only screen and (max-width:400px){
-        body{
-            
-           
-        }
+    @media only screen and (max-width:601px){
         #header .container {
-            width: 400px !important;
+            width: 600px !important;
+        }
+        #header .container menu .login {
+            background: #E02C6D;
+            padding: 10px 24px;
+            margin-right: 25px;
         }
         #header .container menu {
-            width: 400px !important;
+            width: 600px !important;
         }
         #hero-bar .container {
-            width: 400px;
+            width: 600px;
         }
         #hero-bar .container .main-bar .left-side, #hero-bar .container .main-bar .right-side {
             width: 100%;
@@ -541,16 +659,84 @@ p {
             margin-left: 18px;
         }
         #blog-section .container {
-            width: 400px;
+            width: 600px;
         }
         #blog-section .container .blog {
             padding-left: 22px;
-            padding-right: 50px;
+            padding-right: 23px;
             margin-right: 0;
+        }
+        
+        #consulting {
+            background: #2D25A0;
+            margin-top: 73px;
+            padding: 100px 0;
+        }
+        #consulting .container {
+            width: 600px;
+            display: block;
+            text-align: center;
+        }
+        #consulting .container .left-side {
+            width: 100%;
+             margin-top: -42px;
+            
+        }
+        #consulting .container .right-side .btn {
+            margin-top: 10px;
+            color: #fff;
+            background: #E02C6D;
+            border: 2px solid #E02C6D;
+            padding: 11px 26px;
+            border-radius: 20px;
+            transition: .3s linear;
+        }
+        #consulting .container .right-side {
+            transition: transform .3s linear;
+            margin-top: 42px;
+        }
+        #contact {
+            background: #2D25A0;
+            margin-top: 60px;
+            padding: 73px 0;
+        }
+        #contact .container {
+            width: 600px;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        #contact .container .left-side {
+            width: 100%;
+            padding-right: 0;
+            text-align: center;
+        }
+        #contact .container .right-side {
+            width: 100%;
+        }
+        #contact .container .left-side .text-3 {
+            font-size: 15px;
+            color: #fff;
+            margin-top: 20px;
+            padding: 0 24px;
+        }
+        #contact .container .right-side .text {
+            font-size: 23px;
+            margin-bottom: 10px;
+            color: #fff;
+            margin-top: 30px;
+        }
+        #contact .container .right-side .wrap {
+            text-align: center;
+        }
+        #contact .container .right-side input, #contact .container .right-side textarea {
+            
+            margin-left: auto;
+            margin-right: auto;
         }
 
         #Highlights .container {
-            width: 400px;
+            width: 600px;
         }
         #Highlights .container .left-side h2 {
             margin-top: -90px;
@@ -572,13 +758,153 @@ p {
         #Highlights .container .right-side {
             padding: 0 30px;
         }
-        #logo .container {
-            width: 400px;
+        #footer .container {
+            width: 600px;
         }
-        #logo {
+        #footer {
             margin-top: 80px;
         }
-        #logo .container .main-body img {
+        #footer .container .main-body img {
+            width: 60%;
+        }
+    }
+
+    
+    /* ---------------------- */
+
+    @media only screen and (max-width:376px){
+        #header .container {
+            width: 375px !important;
+        }
+        #header .container menu .login {
+            background: #E02C6D;
+            padding: 10px 24px;
+            margin-right: 25px;
+        }
+        #header .container menu {
+            width: 375px !important;
+        }
+        #hero-bar .container {
+            width: 375px;
+        }
+        #hero-bar .container .main-bar .left-side, #hero-bar .container .main-bar .right-side {
+            width: 100%;
+        }
+        #hero-bar .container .main-bar .left-side h2 {
+            font-size: 36px;
+            color: #fff;
+            margin-bottom: 37px;
+            line-height: 45px;
+            margin-left: 35px;
+        }
+        #hero-bar .container .main-bar .right-side img {
+            width: 88%;
+            margin-left: 18px;
+        }
+        #blog-section .container {
+            width: 375px;
+        }
+        #blog-section .container .blog {
+            padding-left: 22px;
+            padding-right: 23px;
+            margin-right: 0;
+        }
+        
+        #consulting {
+            background: #2D25A0;
+            margin-top: 73px;
+            padding: 100px 0;
+        }
+        #consulting .container {
+            width: 375px;
+            display: block;
+            text-align: center;
+        }
+        #consulting .container .left-side {
+            width: 100%;
+             margin-top: -42px;
+            
+        }
+        #consulting .container .right-side .btn {
+            margin-top: 10px;
+            color: #fff;
+            background: #E02C6D;
+            border: 2px solid #E02C6D;
+            padding: 11px 26px;
+            border-radius: 20px;
+            transition: .3s linear;
+        }
+        #consulting .container .right-side {
+            transition: transform .3s linear;
+            margin-top: 42px;
+        }
+        #contact {
+            background: #2D25A0;
+            margin-top: 60px;
+            padding: 73px 0;
+        }
+        #contact .container {
+            width: 375px;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        #contact .container .left-side {
+            width: 100%;
+            padding-right: 0;
+            text-align: center;
+        }
+        #contact .container .right-side {
+            width: 100%;
+        }
+        #contact .container .right-side .text {
+            font-size: 23px;
+            margin-bottom: 10px;
+            color: #fff;
+            margin-top: 30px;
+        }
+        #contact .container .right-side .wrap {
+            text-align: center;
+        }
+        #contact .container .right-side input, 
+        #contact .container .right-side textarea
+        {
+            
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+
+        #Highlights .container {
+            width: 375px;
+        }
+        #Highlights .container .left-side h2 {
+            margin-top: -90px;
+            color: #0A0826;
+            font-size: 27px;
+            line-height: 39px;
+            margin-left: 31px;
+        }
+        #Highlights .container .left-side p {
+            margin-left: 31px;
+        }
+        #Highlights .container .left-side p {
+            margin-left: 31px;
+            margin-right: 48px;
+        }
+        #Highlights .container .left-side .root-btn {
+            margin-left: 32px;
+        }
+        #Highlights .container .right-side {
+            padding: 0 30px;
+        }
+        #footer .container {
+            width: 375px;
+        }
+        #footer {
+            margin-top: 80px;
+        }
+        #footer .container .main-body img {
             width: 60%;
         }
     }
